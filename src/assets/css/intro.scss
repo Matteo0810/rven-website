@@ -1,0 +1,14 @@
+.intro {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    transition: top .4s ease;
+    background: #d4e8e2;
+    width: 100%;
+}
+  
+.intro>video {
+    width: 101%;
+    height: 111vh;
+}

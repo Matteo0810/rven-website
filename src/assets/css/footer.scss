@@ -1,0 +1,131 @@
+footer {
+    background: $main-color;
+    margin-top: 11%;
+}
+
+footer > .contact-us {
+    background: #0378a6;
+    width: 35%;
+    height: 222px;
+    position: relative;
+    left: 33%;
+    border-radius: 45px;
+    color: white;
+    top: -14vh;
+}
+
+footer > .contact-us > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 4px;
+    padding-top: 40px;
+}
+
+footer > .contact-us > .middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer > .contact-us > .middle > .line {
+    background: white;
+    width: 26%;
+    height: 2px;
+    margin-top: 9px;
+}
+
+footer > .contact-us > .infos > p {
+    margin: 23px 55px;
+    font-size: 17px;
+}
+
+footer > .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 97px;
+}
+
+footer > .wrapper > .left > img {
+    margin-bottom: 16px;
+}
+
+footer > .wrapper > .left > p {
+    width: 325px;
+    color: white;
+}
+
+footer > .wrapper > .middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    margin-left: 2%;
+}
+
+footer > .wrapper > .middle > .left {
+    margin: 0 34px;
+}
+
+footer > .wrapper > .middle > .left > h4 {
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+    font-weight: 100;
+    font-size: 22px;
+    width: 266px;
+}
+
+footer > .wrapper > .middle > .left > p {
+    margin-top: 19px;
+    font-size: 18px;
+}
+
+footer > .wrapper > .middle > .right {
+    margin: 0 34px;
+}
+
+footer > .wrapper > .middle > .right > h4 {
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+    font-weight: 100;
+    font-size: 22px;
+    margin-bottom: 18px;
+    width: 266px;
+}
+
+footer > .wrapper > .middle > .right > a {
+    color: white;
+    font-size: 18px;
+}
+
+footer > .wrapper > .middle > .left > p {
+    margin-top: 19px;
+    font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1035px) {
+    footer > .contact-us > h1 {
+        font-size: 20px;
+    }
+    footer > .contact-us {
+        position: unset;
+        width: 375px;
+        height: 222px;
+    }
+    footer {
+        display: grid;
+        justify-items: center;
+    }
+    footer > .contact-us {
+        margin-top: -124px;
+        margin-bottom: 61px;
+    }
+}
+@media screen and (max-width: 1013px) {
+    .wrapper > .left {
+        text-align: center;
+        margin-bottom: 21px;
+    }
+}

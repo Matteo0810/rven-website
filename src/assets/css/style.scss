@@ -1,0 +1,87 @@
+/* FONTS */
+@font-face {
+    src: url(../fonts/SF-Pro-Display-Light.otf);
+    font-family: "sf-pro-display-light";
+}
+
+@font-face {
+    src: url(../fonts/SF-Pro-Display-Bold.otf);
+    font-family: "sf-pro-display-bold";
+}
+
+@font-face {
+    src: url(../fonts/SF-Pro-Display-Medium.otf);
+    font-family: "sf-pro-display-medium";
+}
+
+@font-face {
+    src: url(../fonts/SF-Pro-Display-Regular.otf);
+    font-family: "sf-pro-display-regular";
+}
+
+/* BASIC */
+
+$black-color: #0d0d0d;
+$main-color: #023859;
+$blue-color: #0378a6;
+$blue-sky-color: #049dbf;
+
+*,
+*::before,
+*::after {
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "sf-pro-display-light";
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    background: transparent conic-gradient(from 90deg at 0% 0%, #ffffff 0%, #023859 100%) 0% 0% no-repeat padding-box;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: $main-color;
+    border: 2px solid #f1f1f1;
+    border-radius: 100px;
+}
+
+/* IMPORTATIONS */
+@import "./intro.scss";
+@import "./header.scss";
+@import "./home.scss";
+@import "./footer.scss";
+
+/* TRANSITIONS */
+@keyframes brand-appear {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 46vh;
+        opacity: 1;
+    }
+}
+
+@keyframes brand-disapear {
+    from {
+        width: 46vh;
+        opacity: 1;
+    }
+    to {
+        width: 0;
+        opacity: 0;
+    }
+}
