@@ -9,7 +9,7 @@ header {
     z-index: 9999;
 }
 
-header > img {
+header > a > img {
     position: absolute;
     top: 30px;
     left: 100px;
@@ -77,6 +77,11 @@ header > .right > a {
     text-transform: uppercase;
     font-size: 15px;
     box-shadow: 0px 2px 8px #91919166;
+    transition: all .3s ease;
+
+    &:hover {
+        background: $blue-color;
+    }
 }
 
 .responsive {
@@ -162,39 +167,4 @@ header > .right > a {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 1346px) {
-    header > img {
-        left: 49px;
-    }
-}
-@media screen and (max-width: 1214px) {
-    header > img {
-        display: none;
-    }
-    header > nav {
-        display: none;
-    }
-    .responsive {
-        display: block;
-    }
-    header > .right {
-        right: 46px;
-    }
-}
-@media screen and (max-width: 922px) {
-    header > .right > a {
-        display: none;
-    }
-}
-@media screen and (max-width: 517px) {
-    .responsive > .responsive-image {
-        float: right;
-        margin-right: 37px;
-    }
-}
-@media screen and (max-width: 373px) {
-    .responsive-image > img {
-        width: 123px;
-        margin-top: 9px;
-    }
-}
+/*@media screen and (max-width: 1035px) {}*/

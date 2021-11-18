@@ -1,17 +1,18 @@
 footer {
     background: $main-color;
     margin-top: 11%;
+    display: grid;
+    justify-items: center;
 }
 
 footer > .contact-us {
     background: #0378a6;
     width: 35%;
     height: 222px;
-    position: relative;
-    left: 33%;
+    margin-top: -124px;
+    margin-bottom: 61px;
     border-radius: 45px;
     color: white;
-    top: -14vh;
 }
 
 footer > .contact-us > h1 {
@@ -38,11 +39,22 @@ footer > .contact-us > .middle > .line {
 footer > .contact-us > .infos > p {
     margin: 23px 55px;
     font-size: 17px;
+    letter-spacing: 2px;
+}
+
+footer > .contact-us > .infos > p.phone {
+    letter-spacing: 3px;
+}
+
+footer > .contact-us > .infos > p.phone > .country {
+    background: $blue-sky-color;
+    padding: 5px 9px;
+    border-radius: 100px;
+    margin-right: 5px;
 }
 
 footer > .wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: -webkit-box;
     justify-content: center;
     padding-bottom: 97px;
 }
@@ -105,27 +117,4 @@ footer > .wrapper > .middle > .left > p {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 1035px) {
-    footer > .contact-us > h1 {
-        font-size: 20px;
-    }
-    footer > .contact-us {
-        position: unset;
-        width: 375px;
-        height: 222px;
-    }
-    footer {
-        display: grid;
-        justify-items: center;
-    }
-    footer > .contact-us {
-        margin-top: -124px;
-        margin-bottom: 61px;
-    }
-}
-@media screen and (max-width: 1013px) {
-    .wrapper > .left {
-        text-align: center;
-        margin-bottom: 21px;
-    }
-}
+/*@media screen and (max-width: 1035px) {}*/

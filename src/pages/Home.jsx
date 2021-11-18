@@ -95,9 +95,9 @@ export default class Home extends Component {
                     </div>
                     <div className="bottom-box"></div>
                 </div>
-                <div id="who" className="who">
+                <div className="who">
                     <h1>Qui sommes-nous ?</h1>
-                    <p>
+                    <p id="solves">
                         Une équipe jeune et dynamique qui met à votre disposition toute son expertise pour
                         concevoir des solutions technologiques sur mesure.
                         Nous vous accompagnons dans la création de sites internet : design UX et UI, design
@@ -110,7 +110,7 @@ export default class Home extends Component {
                         chaque projet ainsi que leur délai de réalisation.
                     </p>
                 </div>
-                <div id="solves" className="solves">
+                <div className="solves">
                     <h1>Les solutions</h1>
                     <div className="plates">
                         <div id="plate-1" className="plate">
